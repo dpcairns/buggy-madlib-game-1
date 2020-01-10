@@ -23,7 +23,7 @@ const verb1Input = document.getElementById('verb-1-input');
 const name2Span = document.getElementById('name-2-span');
 const name2Input = document.getElementById('name-2-input');
 
-const storyBox = document.getElementById('results');
+const storyBox = document.getElementById('results-box');
 
 // Get button
 const button = document.getElementById('button');
@@ -32,6 +32,7 @@ const button = document.getElementById('button');
 const changefunc = () => {
     adj1Span.textContent = adj1Input.value;
     name1Span.textContent = name1Input.value;
+    noun1Span.textContent = noun1Input.value;
     noun2Span.textContent = noun2Input.value;
     noun3Span.textContent = noun3Input.value;
     saying1Span.textContent = saying1Input.value;

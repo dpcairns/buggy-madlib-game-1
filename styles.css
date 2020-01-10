@@ -2,14 +2,6 @@
     box-sizing: border-box;
 }
 
-#form {
-    margin: 0 auto;
-    width: 400px;
-    border-radius: 10px;
-    padding: 50px;
-    background-color: gold;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
@@ -17,19 +9,76 @@ body {
 
 h1 {
     font-family: cursive;
-    color: #FFB1CF;
+    color: #FF6EC7;
     text-align: center;
 }
 
-#results {
+h2 {
+    color: darkslategrey;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+#form-box {
     margin: 0 auto;
-    width: 600px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #FF6EC7;
+    color: #FFF;
+    border: 5px solid #FFED8A;
+}
+
+label {
+    display: block;
+    color: #FFED8A;
+    text-align: center;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+input {
+    border: none;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    color: darkslategrey;
+    font-weight: lighter;
+    text-align: center;
+}
+
+button {
+    background-color: #FFED8A;
+    width: 35%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #FF6EC7;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#results-box {
+    margin: 0 auto;
+    width: 45%;
     display: none;
+    font-family: cursive;
+    font-size: 1.75rem;
+    color: darkslategrey;
 }
 
 #beginning, #end, span {
     font-weight: bold;
-    color: #FFB1CF;
+    color: #FF6EC7;
+}
+
+#beginning, #end {
+    text-transform: uppercase;
 }
 
 #end {
