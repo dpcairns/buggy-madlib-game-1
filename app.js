@@ -1,5 +1,5 @@
-const spanvar = document.getElementById('span');
-const inputvar = document.getElementById('adj1');
+const adj1Span = document.getElementById('adj-1-span');
+const adj1Input = document.getElementById('adj-1-input');
 
 const spanadjvar = document.getElementById('noun-1-span');
 const inputadjvar = document.getElementById('noun-1-input');
@@ -7,7 +7,7 @@ const inputadjvar = document.getElementById('noun-1-input');
 const buttonvar = document.getElementById('button');
 
 const changefunc = () => {
-    spanvar.textContent = inputvar.value;
+    adj1Span.textContent = adj1Input.value;
     spanadjvar.textContent = inputadjvar.value;
 }
 
