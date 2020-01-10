@@ -17,16 +17,23 @@ body {
 
 h1 {
     font-family: cursive;
-    color: palevioletred;
+    color: #FFB1CF;
     text-align: center;
 }
 
 #results {
     margin: 0 auto;
     width: 600px;
+    display: none;
 }
 
-#beginning {
+#beginning, #end, span {
     font-weight: bold;
+    color: #FFB1CF;
 }
+
+#end {
+    text-align: center;
+}
+
 
