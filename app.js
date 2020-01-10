@@ -1,34 +1,18 @@
+// Get all spans and inputs
 const adj1Span = document.getElementById('adj-1-span');
 const adj1Input = document.getElementById('adj-1-input');
 
-const spanadjvar = document.getElementById('noun-1-span');
-const inputadjvar = document.getElementById('noun-1-input');
+const noun1Span = document.getElementById('noun-1-span');
+const noun1Input = document.getElementById('noun-1-input');
 
-const buttonvar = document.getElementById('button');
+// Get button
+const button = document.getElementById('button');
 
+// Create function to set input values inside of spans
 const changefunc = () => {
     adj1Span.textContent = adj1Input.value;
-    spanadjvar.textContent = inputadjvar.value;
+    noun1Span.textContent = noun1Input.value;
 }
 
-buttonvar.addEventListener('click', changefunc)
-
-
-
-//const adj1Output = adj1Input.value;
-
-
-// Add an event listener to your button
-
-
-
-
-
-
-
-
-
-// add an event listener to the button
-
-
-// In the event listen, put all the input.values into the span.textContent elements
+// Add event listener to button that runs above function when button is clicked
+button.addEventListener('click', changefunc)
