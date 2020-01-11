@@ -26,6 +26,7 @@ const verb1Input = document.getElementById('verb-1-input');
 const name2Span = document.getElementById('name-2-span');
 const name2Input = document.getElementById('name-2-input');
 
+// Get all elements whose display value will change at some point
 const instructionsLine = document.getElementById('instructions');
 const resetButton = document.getElementById('reset');
 const formBox = document.getElementById('form-box');
@@ -36,6 +37,7 @@ const button = document.getElementById('button');
 
 // Create function to set input values inside of spans
 const changeFunc = () => {
+    // Populate spans with input values
     adj1Span.textContent = adj1Input.value;
     name1Span.textContent = name1Input.value;
     noun1Span.textContent = noun1Input.value;
@@ -46,25 +48,25 @@ const changeFunc = () => {
     verb1Span.textContent = verb1Input.value;
     name2Span.textContent = name2Input.value;  
 
-    //change visibility of buttons and boxes
+    // Change visibility of buttons and boxes
     instructionsLine.style.display = "none";
     resetButton.style.display = "block";   
     storyBox.style.display = "block";
     formBox.style.display = "none";
 }
 
-
-
 // Add event listener to button that runs above function when button is clicked
 button.addEventListener('click', changeFunc)
 
-
+// Create function that resets page
 const startOver = () => {
+    // hide story + reset button, and display form + submit button
     instructionsLine.style.display = "block";
     formBox.style.display = "block";
     storyBox.style.display = "none";
     resetButton.style.display = "none";
 
+    // clear input values
     adj1Input.value = "";
     name1Input.value = "";
     noun1Input.value = "";
@@ -76,4 +78,5 @@ const startOver = () => {
     name2Input.value = ""; 
 }
 
+// Add event listener to button that runs above function when button is clicked
 resetButton.addEventListener('click', startOver)
