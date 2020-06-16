@@ -17,8 +17,8 @@ const noun3Input = document.getElementById('noun-3-input');
 const saying1Span = document.getElementById('saying-1-span');
 const saying1Input = document.getElementById('saying-1-input');
 
-const noun4Span = document.getElementById('noun-4-span');
-const noun4Input = document.getElementById('noun-4-input');
+const noun4Span = document.getElementById('nounspan');
+const noun4Input = document.getElementById('nouninput');
 
 const verb1Span = document.getElementById('verb-1-span');
 const verb1Input = document.getElementById('verb-1-input');
@@ -28,7 +28,7 @@ const name2Input = document.getElementById('name-2-input');
 
 // Get all elements whose display value will change at some point
 const instructionsLine = document.getElementById('instructions');
-const resetButton = document.getElementById('reset');
+const button = document.getElementById('reset');
 const formBox = document.getElementById('form-box');
 const storyBox = document.getElementById('results-box');
 
@@ -43,20 +43,20 @@ const changeFunc = () => {
     noun1Span.textContent = noun1Input.value;
     noun2Span.textContent = noun2Input.value;
     noun3Span.textContent = noun3Input.value;
-    saying1Span.textContent = saying1Input.value;
+    saying1Span.content = saying1Input;
     noun4Span.textContent = noun4Input.value;
     verb1Span.textContent = verb1Input.value;
     name2Span.textContent = name2Input.value;  
 
     // Change visibility of buttons and boxes
-    instructionsLine.style.display = "none";
-    resetButton.style.display = "block";   
+    instructionsLine.display = "none";
+    button.style.display = "block";   
     storyBox.style.display = "block";
     formBox.style.display = "none";
 }
 
 // Add event listener to button that runs above function when button is clicked
-button.addEventListener('click', changeFunc)
+button.addEventListener = ('on-click', changeFunc)
 
 // Create function that resets page
 const startOver = () => {
@@ -64,7 +64,7 @@ const startOver = () => {
     instructionsLine.style.display = "block";
     formBox.style.display = "block";
     storyBox.style.display = "none";
-    resetButton.style.display = "none";
+    button.style.display = "none";
 
     // clear input values
     adj1Input.value = "";
@@ -79,4 +79,4 @@ const startOver = () => {
 }
 
 // Add event listener to button that runs above function when button is clicked
-resetButton.addEventListener('click', startOver)
+button.addEventListener('click', startOver)

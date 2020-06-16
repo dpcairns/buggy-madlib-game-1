@@ -1,1 +1,38 @@
 # madlib-game
+
+### Note: these bugs weren't in the original student submission. I introduced these bugs for this assignment.
+
+# Bugs
+1) The image doesn't seem to be loading
+1) The event handler isn't working
+1) When the ever handler is called, nothing changes on the screen
+1) The 'Girls name' never shows up in the text correctly
+1) The instructions don't disappear when the user submits.
+1) Something is wrong with the second plural noun block
+1) Something is broken with the 'exclamation' section
+1) The rest button isn't working
+
+
+## Debugging starting points
+
+1) Open the javascript console in Chrome and follow the bouncing ball
+1) Look for and examine red squiggles in VSCode, starting from top
+1) Drop console logs/breakpoints in your code to see 
+        - a) how far your code gets before it breaks
+        - b) the value of your variables
+                
+        - What do you expect the variable values to be? 
+        - Why do you expect it to be that way? Where do you make that happen?
+        - Is the value what you expected? 
+        - If not, why not? 
+        - What would you have to change to make the actual value match your expectations?
+
+
+## Most common JS error:
+
+`Cannot read property 'type' of undefined (app.js:34)`
+`
+ 
+1) Go look for `.type` on line 34 in app.js
+2) Look to the left of `.type`
+3) Figure out why the thing to the left of `.type` is undefined
